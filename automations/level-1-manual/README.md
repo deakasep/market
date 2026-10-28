@@ -17,7 +17,7 @@
 
 | # | Langkah | Rujukan | Output |
 |---|---|---|---|
-| 1 | Cek board ClickUp (Space **Clau AI**): kartu **in progress** maks 3, pilih yang dikerjakan hari ini | [tasks/README.md § Board ClickUp](https://github.com/d34faiza-commits/clau-content/blob/main/tasks/README.md#board-clickup) | Fokus hari ini |
+| 1 | Cek board ClickUp (Space **Clau AI**): kartu **in progress** maks 3, pilih yang dikerjakan hari ini | [tasks/README.md § Board ClickUp](https://github.com/deakasep/content/blob/main/tasks/README.md#board-clickup) | Fokus hari ini |
 | 2 | Cek komentar, DM, dan review baru di setiap channel client (24–72 jam setelah publish) | [WORKFLOW Step 9](../../CONTENT-WORKFLOW.md) | Daftar yang perlu dibalas / dieskalasi |
 | 3 | Draft balasan review dengan skill `reply-guest-review`; review negatif berat → eskalasi L3, bukan balasan final | [skill](../../skills/reply-guest-review/SKILL.md) | Draft balasan + level approval |
 | 4 | Draft konten yang jatuh tempo (caption/listing) dengan skill terkait | [index skills](../../README.md#index-skills) | Draft + tabel klaim |
@@ -29,7 +29,7 @@
 
 | # | Langkah | Rujukan |
 |---|---|---|
-| 1 | Weekly sweep board: rapikan Backlog, update priority, cek kartu Review yang macet | [task-management](https://github.com/d34faiza-commits/clau-content/blob/main/docs/task-management.md) |
+| 1 | Weekly sweep board: rapikan Backlog, update priority, cek kartu Review yang macet | [task-management](https://github.com/deakasep/content/blob/main/docs/task-management.md) |
 | 2 | Cek kalender konten minggu depan; pastikan asset & consent siap | [content-calendar](../../templates/content-calendar.md) |
 | 3 | Cek promo yang akan kedaluwarsa (bio, highlight, GBP offer, OTA) | [publication checklist](../../qa/publication-checklist.md) — bagian sinkronisasi |
 | 4 | Jalankan `python scripts/validate.py`, commit & push perubahan repo | [AGENTS.md](../../AGENTS.md) |

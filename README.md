@@ -5,18 +5,18 @@ Operasi klien pertama: [pilot terukur](./commercial/pilot-operations.md).
 
 **Pilar 1 CLAU AI: AI Marketing** (konten & pemasaran) untuk hospitality & tourism Indonesia. Berisi rules, prompt, skill, knowledge, template, dan QA gate untuk memproduksi konten yang **jujur, legal, on-brand, dan siap publish**, dengan AI sebagai content partner, bukan pengganti approval manusia.
 
-> **Status:** Public, hanya untuk dilihat ([LICENSE](./LICENSE)), split dari `clau-content` 2026-10-04. Status kerja terkini: [status & handoff](https://github.com/d34faiza-commits/clau-content/blob/main/docs/status.md)
-> **Fondasi:** submodule [`core/`](https://github.com/d34faiza-commits/clau-core) → `AI-CONSTITUTION.md`, `AI-BOUNDARY.md`, pipeline, orchestrator
+> **Status:** Public, hanya untuk dilihat ([LICENSE](./LICENSE)), split dari `clau-content` 2026-10-04. Status kerja terkini: [status & handoff](https://github.com/deakasep/content/blob/main/docs/status.md)
+> **Fondasi:** submodule [`core/`](https://github.com/deakasep/core) → `AI-CONSTITUTION.md`, `AI-BOUNDARY.md`, pipeline, orchestrator
 > **Workflow konten:** [CONTENT-WORKFLOW.md](./CONTENT-WORKFLOW.md) · **Agent:** [AGENTS.md](./AGENTS.md) · **Credit:** [ACKNOWLEDGMENT.md](./ACKNOWLEDGMENT.md)
 
-> **Constitution:** `core/AI-CONSTITUTION.md` v3.1.0 **Approved** (2026-10-12: `main` wajib lewat PR + CI hijau; v3.0.0 2026-10-09: 5 pilar v2, otonomi A/B/C default B, 4 vertical fokus; v2.0.0 2026-10-04); menggantikan *CLAU AI Content Constitution v1.0.0* (Superseded, arsip di repo [clau-content](https://github.com/d34faiza-commits/clau-content/blob/main/CONTENT-CONSTITUTION.md)).
+> **Constitution:** `core/AI-CONSTITUTION.md` v3.1.0 **Approved** (2026-10-12: `main` wajib lewat PR + CI hijau; v3.0.0 2026-10-09: 5 pilar v2, otonomi A/B/C default B, 4 vertical fokus; v2.0.0 2026-10-04); menggantikan *CLAU AI Content Constitution v1.0.0* (Superseded, arsip di repo [clau-content](https://github.com/deakasep/content/blob/main/CONTENT-CONSTITUTION.md)).
 >
 > **Otoritas perubahan:** Perubahan atas dokumen Approved hanya atas perintah **Pak Indra** atau **Dea Karisna (d34faiza)** (`core/AI-CONSTITUTION.md` §14).
 
 ## Setup
 
 ```bash
-git clone --recurse-submodules https://github.com/d34faiza-commits/clau-market.git
+git clone --recurse-submodules https://github.com/deakasep/market.git
 # atau, bila sudah ter-clone:
 git submodule update --init --recursive
 ```
@@ -127,7 +127,7 @@ Level 1 (manual/semi-manual) aktif: [automations/level-1-manual/README.md](./aut
 
 ## Task Management
 
-Board kerja: **ClickUp** Space **Clau AI** → folder **CLAU AI** → list **Pilar 1 – AI Marketing** (sejak 2026-10-21). Board Markdown [clau-content/tasks](https://github.com/d34faiza-commits/clau-content/tree/main/tasks) dibekukan sebagai riwayat.
+Board kerja: **ClickUp** Space **Clau AI** → folder **CLAU AI** → list **Pilar 1 – AI Marketing** (sejak 2026-10-21). Board Markdown [clau-content/tasks](https://github.com/deakasep/content/tree/main/tasks) dibekukan sebagai riwayat.
 
 ## Validation
 

@@ -2,13 +2,13 @@
 
 > Peta repo untuk AI agent. Baca file ini dulu sebelum menjelajah repo. Last updated: 2026-10-23
 
-> 🔔 **Sesi baru: baca [status & handoff CLAU AI](https://github.com/d34faiza-commits/clau-content/blob/main/docs/status.md) dulu** (otoritas, keputusan yang sudah diambil, status, pekerjaan terbuka). Repo Jerco milik Pak Indra: jangan disentuh tanpa persetujuan beliau.
+> 🔔 **Sesi baru: baca [status & handoff CLAU AI](https://github.com/deakasep/content/blob/main/docs/status.md) dulu** (otoritas, keputusan yang sudah diambil, status, pekerjaan terbuka). Repo Jerco milik Pak Indra: jangan disentuh tanpa persetujuan beliau.
 
 ## 1. Identitas
 
 | Item | Nilai |
 |---|---|
-| Repo | `d34faiza-commits/clau-market` (public, hanya untuk dilihat; LICENSE) |
+| Repo | `deakasep/market` (public, hanya untuk dilihat; LICENSE) |
 | Peran | Pilar 1 — AI Marketing (konten & pemasaran) untuk hospitality Indonesia |
 | Submodule | `core/` → clau-core · `agents/` → clau-agent (`agents/core/` ikut pin agents; `core/` disamakan dengan pin itu) |
 | Default branch | `main` |

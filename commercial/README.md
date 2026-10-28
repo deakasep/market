@@ -1,6 +1,6 @@
 # Commercial Kit — Pilar 1 AI Marketing (Hospitality)
 
-> **Status:** **Approved v1.0.0 (2026-10-23)**: owner Dea Karisna (d34faiza) menjawab paket keputusan TASK-067 K1–K8 "setuju semua". Disiapkan AI agent; keputusan tercatat di paket keputusan [clau-content `docs/review-packet-task-067.md`](https://github.com/d34faiza-commits/clau-content/blob/main/docs/review-packet-task-067.md). Template kontrak dan DPA **belum boleh ditandatangani** sebelum dicek konsultan hukum (TASK-053). Harga **tidak** disimpan di repo ini (repo public): price sheet ada di workspace owner.
+> **Status:** **Approved v1.0.0 (2026-10-23)**: owner Dea Karisna (d34faiza) menjawab paket keputusan TASK-067 K1–K8 "setuju semua". Disiapkan AI agent; keputusan tercatat di paket keputusan [clau-content `docs/review-packet-task-067.md`](https://github.com/deakasep/content/blob/main/docs/review-packet-task-067.md). Template kontrak dan DPA **belum boleh ditandatangani** sebelum dicek konsultan hukum (TASK-053). Harga **tidak** disimpan di repo ini (repo public): price sheet ada di workspace owner.
 
 Isi folder ini menjawab satu pertanyaan: *apa yang dijual CLAU AI di Pilar 1, ke siapa, dengan janji apa, dan bagaimana dikerjakan tanpa melanggar rules 01–09.*
 
