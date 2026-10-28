@@ -1,8 +1,8 @@
 [submodule "core"]
 	path = core
-	url = https://github.com/d34faiza-commits/clau-core.git
+	url = https://github.com/deakasep/core.git
 	branch = main
 [submodule "agents"]
 	path = agents
-	url = https://github.com/d34faiza-commits/clau-agent.git
+	url = https://github.com/deakasep/agent.git
 	branch = main
