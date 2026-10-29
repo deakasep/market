@@ -127,7 +127,7 @@ Level 1 (manual/semi-manual) aktif: [automations/level-1-manual/README.md](./aut
 
 ## Task Management
 
-Board kerja: **ClickUp** Space **Clau AI** → folder **CLAU AI** → list **Pilar 1 – AI Marketing** (sejak 2026-10-21). Board Markdown [clau-content/tasks](https://github.com/deakasep/content/tree/main/tasks) dibekukan sebagai riwayat.
+Board kerja: **ClickUp** folder **CLAW AI** → list **Marketing** (board baru sejak 2026-10-29; kode & server di list **Platform**). Board Markdown [clau-content/tasks](https://github.com/deakasep/content/tree/main/tasks) dibekukan sebagai riwayat.
 
 ## Validation
 
