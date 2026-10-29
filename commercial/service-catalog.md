@@ -14,7 +14,7 @@
 | Setiap klaim (harga, fasilitas, jarak, halal, view) dicek ke fact sheet yang Anda konfirmasi | Agency produksi foto/video sinematik atau pengelola iklan berbayar |
 | Kalender konten Indonesia (SKB libur, Ramadan, Nyepi, Galungan, libur sekolah) | Penjamin followers, reach, atau booking |
 
-Vertical fokus: **villa/guesthouse/homestay, restoran/cafe/beach club, wedding & event, travel & tour** (AI-CONSTITUTION v3.1.0 § 2). Hotel/resort dan spa tetap dilayani dengan template akomodasi.
+Vertical fokus: **villa/guesthouse/homestay, restoran/cafe/beach club, wedding & event, travel & tour** (template hospitality; sejak AI-CONSTITUTION v4.0.0 § 2 klien UMKM semua sektor dilayani lewat langganan mandiri, lihat [pricing.md](./pricing.md)). Hotel/resort dan spa tetap dilayani dengan template akomodasi.
 
 ## 2. Paket Bulanan
 
