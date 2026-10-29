@@ -1,7 +1,7 @@
 {
   "contract_version": "1.0.0",
   "bundle_id": "tara-hospitality",
-  "bundle_version": "0.1.1",
+  "bundle_version": "0.1.2",
   "runtime_contract_major": 1,
   "agent_id": "caption-writer",
   "intent": "caption",
@@ -48,12 +48,12 @@
     {
       "kind": "constitution",
       "path": "core/AI-CONSTITUTION.md",
-      "sha256": "c98df56ee245969c3f3417bd1d3266dbabf7cdca5d12d990caca0eb3734407e0"
+      "sha256": "71d7980177823ec2021f5fe3b2f3810e31d6fbfbd299ef1712c6223acdff155b"
     },
     {
       "kind": "boundary",
       "path": "core/AI-BOUNDARY.md",
-      "sha256": "fae477bb2aa1d402fcfce75d6a5c1009bf087eaca8a1427ab9b3df1ee8a5c1b9"
+      "sha256": "9dff479e3d1a64d1a139c8299c161437faaf46de40c5358175b55790fb3b7571"
     },
     {
       "kind": "rule",
