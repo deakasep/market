@@ -2,6 +2,8 @@
 
 > **Status:** **Approved v1.0.0 (2026-10-23)**: owner Dea Karisna (d34faiza) menjawab paket keputusan TASK-067 K1–K8 "setuju semua". Isi paket disusun dari skill yang ada di repo ini dan celah pasar di [competitor-content-agencies.md](../knowledge/market/competitor-content-agencies.md). Facebook ditambahkan atas permintaan owner 2026-10-23. Harga ada di price sheet privat owner, bukan di sini.
 
+> **Sejak 2026-10-29:** produk utama CLAU AI adalah langganan mandiri (paket + kredit, [pricing.md](./pricing.md); core AI-CONSTITUTION v4.0.0). Katalog ini berlaku untuk **layanan terkelola** sebagai add-on bagi klien yang ingin tim CLAU mengerjakan setup, review, dan penjadwalan.
+
 ## 1. Posisi
 
 **"Konten hospitality yang jujur, legal, dan siap tayang: ditulis dengan AI, diperiksa manusia, disetujui Anda."**
