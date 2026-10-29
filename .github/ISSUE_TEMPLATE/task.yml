@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Gunakan ID yang sama dengan board Markdown di repo arsip d34faiza-commits/clau-content (`tasks/`). Setelah issue dibuat, tambahkan URL issue ke field `Related` task tersebut.
+        Gunakan ID yang sama dengan board Markdown di repo arsip deakasep/content (`tasks/`). Setelah issue dibuat, tambahkan URL issue ke field `Related` task tersebut.
         **Jangan** masukkan data client, nama tamu, harga kontrak, atau credential (lihat AI-BOUNDARY.md di clau-core).
   - type: input
     id: task_id
