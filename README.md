@@ -9,7 +9,7 @@ Operasi klien pertama: [pilot terukur](./commercial/pilot-operations.md).
 > **Fondasi:** submodule [`core/`](https://github.com/deakasep/core) → `AI-CONSTITUTION.md`, `AI-BOUNDARY.md`, pipeline, orchestrator
 > **Workflow konten:** [CONTENT-WORKFLOW.md](./CONTENT-WORKFLOW.md) · **Agent:** [AGENTS.md](./AGENTS.md) · **Credit:** [ACKNOWLEDGMENT.md](./ACKNOWLEDGMENT.md)
 
-> **Constitution:** `core/AI-CONSTITUTION.md` v3.1.0 **Approved** (2026-10-12: `main` wajib lewat PR + CI hijau; v3.0.0 2026-10-09: 5 pilar v2, otonomi A/B/C default B, 4 vertical fokus; v2.0.0 2026-10-04); menggantikan *CLAU AI Content Constitution v1.0.0* (Superseded, arsip di repo [clau-content](https://github.com/deakasep/content/blob/main/CONTENT-CONSTITUTION.md)).
+> **Constitution:** `core/AI-CONSTITUTION.md` v4.0.0 **Approved** (2026-10-29: platform karyawan AI berlangganan untuk UMKM + hospitality, kredit & top up, posting setelah approval klien; v3.1.0 2026-10-12: `main` wajib lewat PR + CI hijau; v3.0.0 2026-10-09: 5 pilar v2, otonomi A/B/C default B, 4 vertical fokus; v2.0.0 2026-10-04); menggantikan *CLAU AI Content Constitution v1.0.0* (Superseded, arsip di repo [clau-content](https://github.com/deakasep/content/blob/main/CONTENT-CONSTITUTION.md)).
 >
 > **Otoritas perubahan:** Perubahan atas dokumen Approved hanya atas perintah **Pak Indra** atau **Dea Karisna (d34faiza)** (`core/AI-CONSTITUTION.md` §14).
 
@@ -25,7 +25,7 @@ Link ke `core/...` dan `agents/...` di dokumen repo ini baru berfungsi setelah s
 
 ## Target Industri
 
-Sesuai `core/AI-CONSTITUTION.md` v3.1.0 § 2 dan `core/docs/verticals.md`:
+Sesuai `core/AI-CONSTITUTION.md` v4.0.0 § 2 (UMKM semua sektor + hospitality; template hospitality di bawah tetap berlaku) dan `core/docs/verticals.md`:
 
 | # | Vertical | Status | Fact sheet |
 |---|---|---|---|

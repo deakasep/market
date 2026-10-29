@@ -23,6 +23,10 @@ Tool contracts adalah spesifikasi H2, bukan bukti bahwa tool runner telah diimpl
 Provider dipin `fake`/`fake-0`: real provider/model/settings harus menjadi bundle versi
 baru setelah persetujuan konfigurasi, privacy/budget gates dan regression eval.
 
+## Versi
+
+- **0.1.2** (2026-10-29): hanya checksum `core/AI-CONSTITUTION.md` v4.0.0 dan `core/AI-BOUNDARY.md` v2.0.0 (model langganan) yang berubah; aturan market, persona dan schema tetap. Digest `5f571c41bbe603135c936123dda7a91410a1ed1ff5f4e193a9057c261b673946`. Tetap candidate SIMULASI.
+
 ## Scope
 
 Villa/guesthouse/homestay/hotel/resort, restoran/cafe/beach club, spa/wellness,
