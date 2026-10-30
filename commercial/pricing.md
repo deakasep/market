@@ -1,6 +1,6 @@
 # Harga Langganan & Tarif Kredit — CLAU AI (self-serve)
 
-> **Status:** **Approved v1.0.0 (2026-10-29)**: perintah owner Dea Karisna (d34faiza) dengan konfirmasi bahwa Pak Indra sudah menyetujui model langganan seperti Sintra.ai (clau-core AI-CONSTITUTION v4.0.0 §4b). Ini **sumber tunggal** angka harga publik: landing page (`web/src/data/pricing.ts`) dan platform (clau-agent) wajib memakai angka yang sama. Harga layanan terkelola (managed) tetap di price sheet privat owner.
+> **Status:** **Approved v1.1.0 (2026-10-30)**, perintah owner Dea Karisna: disesuaikan dengan sistem yang berjalan (clau-agent 0.14.0) dan alur kredit Sintra.ai. v1.0.0 (2026-10-29): perintah owner Dea Karisna (d34faiza) dengan konfirmasi bahwa Pak Indra sudah menyetujui model langganan seperti Sintra.ai (clau-core AI-CONSTITUTION v4.0.0 §4b). Ini **sumber tunggal** angka harga publik: landing page (`web/src/data/pricing.ts`) dan platform (clau-agent) wajib memakai angka yang sama. Harga layanan terkelola (managed) tetap di price sheet privat owner.
 
 ## 1. Paket
 
@@ -21,13 +21,20 @@ Semua paket berisi **semua agent aktif** (agent baru otomatis masuk) dan **500 k
 | 550 kredit | Rp100.000 | ±Rp182 (bonus 10%) | 12 bulan |
 | 1.500 kredit | Rp250.000 | ±Rp167 (bonus 20%) | 12 bulan |
 
-Urutan pemakaian: kredit bulanan dulu, lalu kredit top up yang paling cepat kedaluwarsa.
+Aturan kredit (sama dengan sistem, kontrak clau-core API 0.14.0; alur seperti Sintra.ai):
+
+- **Urutan pemakaian:** kredit bulanan dulu, lalu kredit top up yang masih berlaku dan paling cepat kedaluwarsa.
+- **Masa berlaku top up:** 12 bulan sejak pembayaran lunas. Sisa yang belum terpakai **hangus otomatis** setelah itu.
+- **Terlihat di dashboard:** saldo bulanan & top up, dan **top up terdekat yang akan hangus beserta tanggalnya**.
+- **Kredit yang tidak hangus:** kredit kembali dari job AI yang gagal/dibatalkan, dan bonus/kompensasi dari tim CLAU.
+- **Tanpa paket aktif:** sisa kredit top up tetap bisa dipakai; kredit bulanan hanya ada selama paket aktif.
+- **Kredit menipis/habis:** dashboard memberi peringatan; agent berhenti sebelum memanggil AI (tidak ada tagihan tambahan).
 
 ## 3. Tarif Kredit per Aksi
 
 | Aksi | Agent | Kredit | Status agent |
 |---|---|---|---|
-| Chat dengan agent (per pesan) | Semua | 2 | — |
+| Chat dengan agent (per pesan) | Semua | 2 | Planned (fitur chat belum ada) |
 | Caption + hashtag + cek fakta | Tara | 8 | Aktif |
 | Naskah Reels/TikTok | Raka | 13 | Aktif |
 | Rangkaian Stories | Sekar | 8 | Aktif |
@@ -42,7 +49,12 @@ Urutan pemakaian: kredit bulanan dulu, lalu kredit top up yang paling cepat keda
 | Video AI 8 detik (standar / cepat) | Aruna | 111 / 222 | Planned |
 | Analisis data (1 file) | Dara | 20 | Planned |
 | Anotasi data (100 baris) | Dara | 10 | Planned |
-| Tugas integrasi / developer | Teguh | 39 | Planned |
+| Tugas integrasi / developer / website | Teguh | 39 | Planned |
+| SOP / dokumen kerja | Teguh | 10 | Planned |
+| Balas pertanyaan calon pelanggan | Galih | 3 | Planned |
+| Pesan ke tamu (konfirmasi, pengingat) | Sari | 3 | Planned |
+
+Catatan realita (30 Okt 2026): platform masih tahap uji. Agent berstatus **Aktif** sudah lengkap di sistem, tetapi provider AI nyata belum tersambung, jadi pemakaian berbayar baru berjalan setelah peluncuran. Tarif yang dipotong sistem = `clau-agent/backend/app/billing/catalog.py` (dites sama dengan tabel ini).
 
 ## 4. Aturan Hitung (internal, berlaku untuk setiap perubahan tarif)
 
@@ -55,4 +67,5 @@ Urutan pemakaian: kredit bulanan dulu, lalu kredit top up yang paling cepat keda
 
 | Version | Date | Status | Summary |
 |---|---|---|---|
+| 1.1.0 | 2026-10-30 | Approved | Disesuaikan dengan sistem & alur Sintra.ai (perintah owner Dea Karisna): aturan kredit lengkap (urutan pakai, top up hangus 12 bulan otomatis, top up terdekat hangus di dashboard, refund & bonus tidak hangus, top up tanpa paket aktif); chat ditandai Planned; tarif SOP, balas calon pelanggan, pesan tamu, website yang sudah ada di sistem dicantumkan; catatan tahap uji |
 | 1.0.0 | 2026-10-29 | Approved | Harga langganan 1/3/6/12 bulan, top up, tarif kredit per aksi untuk model langganan (core AI-CONSTITUTION v4.0.0). Perintah owner dengan konfirmasi persetujuan Pak Indra |
