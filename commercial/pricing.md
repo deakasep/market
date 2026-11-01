@@ -1,6 +1,6 @@
 # Harga Langganan & Tarif Kredit — CLAU AI (self-serve)
 
-> **Status:** **Approved v1.1.0 (2026-10-30)**, perintah owner Dea Karisna: disesuaikan dengan sistem yang berjalan (clau-agent 0.14.0) dan alur kredit Sintra.ai. v1.0.0 (2026-10-29): perintah owner Dea Karisna (d34faiza) dengan konfirmasi bahwa Pak Indra sudah menyetujui model langganan seperti Sintra.ai (clau-core AI-CONSTITUTION v4.0.0 §4b). Ini **sumber tunggal** angka harga publik: landing page (`web/src/data/pricing.ts`) dan platform (clau-agent) wajib memakai angka yang sama. Harga layanan terkelola (managed) tetap di price sheet privat owner.
+> **Status:** **Approved v1.2.0 (2026-11-02)**, perintah owner Dea Karisna: Mode AI Standar/Pro + model ringan untuk tugas ringan (§3a). v1.1.0 (2026-10-30): disesuaikan dengan sistem yang berjalan (clau-agent 0.14.0) dan alur kredit Sintra.ai. v1.0.0 (2026-10-29): perintah owner Dea Karisna (d34faiza) dengan konfirmasi bahwa Pak Indra sudah menyetujui model langganan seperti Sintra.ai (clau-core AI-CONSTITUTION v4.0.0 §4b). Ini **sumber tunggal** angka harga publik: landing page (`web/src/data/pricing.ts`) dan platform (clau-agent) wajib memakai angka yang sama. Harga layanan terkelola (managed) tetap di price sheet privat owner.
 
 ## 1. Paket
 
@@ -56,6 +56,25 @@ Aturan kredit (sama dengan sistem, kontrak clau-core API 0.14.0; alur seperti Si
 
 Catatan realita (30 Okt 2026): platform masih tahap uji. Agent berstatus **Aktif** sudah lengkap di sistem, tetapi provider AI nyata belum tersambung, jadi pemakaian berbayar baru berjalan setelah peluncuran. Tarif yang dipotong sistem = `clau-agent/backend/app/billing/catalog.py` (dites sama dengan tabel ini).
 
+## 3a. Mode AI (seperti Spark/Smart/Pro Sintra.ai)
+
+Keputusan owner 2026-11-02: **klien memilih sendiri** tingkat model per pekerjaan; tidak ada model mahal yang dipakai diam-diam.
+
+| Mode | Model (`ASSUMPTION` sampai TASK-004 dikonfigurasi) | Dipakai untuk | Tarif |
+|---|---|---|---|
+| **Ringan** (otomatis) | Claude Haiku (kelas terbaru) | Tugas ringan yang dipilih sistem: balasan chat singkat, format ulang, ringkas teks pendek | Sama dengan tarif §3 (tidak ada potongan sampai biaya nyata terukur) |
+| **Standar** (default) | Claude Sonnet (kelas terbaru) | Semua pekerjaan agent di §3 | Tarif §3 |
+| **Pro** (pilihan klien) | **Claude Fable 5.1** | Pekerjaan teks yang klien tandai Pro sebelum mulai | **4× tarif §3**, dibulatkan ke atas (contoh: caption Tara 8 → 32 kredit) |
+
+Aturan mode:
+
+1. Tarif Pro tampil **sebelum** klien mengirim permintaan; pindah mode tidak pernah terjadi otomatis ke Pro.
+2. Pro hanya untuk agent teks. Gambar (Nova) dan video (Aruna) memakai model gambar/video sendiri; tarifnya tetap §3.
+3. Mode Ringan tidak dipakai untuk pekerjaan berisiko (review negatif, harga/promo, agama/adat, laporan angka); pekerjaan itu minimal Standar dan tetap mengikuti level approval.
+4. Pengali 4× dipilih karena harga API Fable 5.1 sekitar 3,3× kelas Sonnet (Fable $10/$50 per juta token masuk/keluar, sumber pihak ketiga 2026-11-02, `ASSUMPTION`); sisa bantalan menjaga aturan §4.1. Dihitung ulang dengan harga resmi saat TASK-004.
+5. Mode tidak mengubah aturan persetujuan: semua hasil tetap draft sampai disetujui manusia.
+6. Belum aktif: mode berlaku setelah provider AI nyata tersambung (TASK-004). Sampai itu web menandainya **segera hadir**.
+
 ## 4. Aturan Hitung (internal, berlaku untuk setiap perubahan tarif)
 
 1. Tarif kredit per aksi **minimal 3× biaya provider AI** per aksi pada nilai jual Rp200/kredit (AI-CONSTITUTION §4b). Biaya provider dihitung dengan kurs berbantalan (di atas kurs pasar) dan tarif provider terbaru.
@@ -67,5 +86,6 @@ Catatan realita (30 Okt 2026): platform masih tahap uji. Agent berstatus **Aktif
 
 | Version | Date | Status | Summary |
 |---|---|---|---|
+| 1.2.0 | 2026-11-02 | Approved | Mode AI (§3a): Ringan (Haiku, otomatis untuk tugas ringan, tarif sama), Standar (Sonnet, default), Pro (Fable 5.1, pilihan klien, 4× tarif). Perintah owner Dea Karisna; aktif setelah TASK-004 |
 | 1.1.0 | 2026-10-30 | Approved | Disesuaikan dengan sistem & alur Sintra.ai (perintah owner Dea Karisna): aturan kredit lengkap (urutan pakai, top up hangus 12 bulan otomatis, top up terdekat hangus di dashboard, refund & bonus tidak hangus, top up tanpa paket aktif); chat ditandai Planned; tarif SOP, balas calon pelanggan, pesan tamu, website yang sudah ada di sistem dicantumkan; catatan tahap uji |
 | 1.0.0 | 2026-10-29 | Approved | Harga langganan 1/3/6/12 bulan, top up, tarif kredit per aksi untuk model langganan (core AI-CONSTITUTION v4.0.0). Perintah owner dengan konfirmasi persetujuan Pak Indra |
