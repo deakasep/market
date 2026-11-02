@@ -1,6 +1,6 @@
 # Harga Langganan & Tarif Kredit — CLAU AI (self-serve)
 
-> **Status:** **Approved v1.3.0 (2026-11-02)**, perintah owner Dea Karisna: kredit percobaan 50 kredit / 3 hari sekali per akun (§2a). v1.2.0 (2026-11-02): Mode AI Standar/Pro + model ringan untuk tugas ringan (§3a). v1.1.0 (2026-10-30): disesuaikan dengan sistem yang berjalan (clau-agent 0.14.0) dan alur kredit Sintra.ai. v1.0.0 (2026-10-29): perintah owner Dea Karisna (d34faiza) dengan konfirmasi bahwa Pak Indra sudah menyetujui model langganan seperti Sintra.ai (clau-core AI-CONSTITUTION v4.0.0 §4b). Ini **sumber tunggal** angka harga publik: landing page (`web/src/data/pricing.ts`) dan platform (clau-agent) wajib memakai angka yang sama. Harga layanan terkelola (managed) tetap di price sheet privat owner.
+> **Status:** **Approved v1.4.0 (2026-11-02)**, perintah owner Dea Karisna: garansi uang kembali 14 hari (§2b). v1.3.0 (2026-11-02): kredit percobaan 50 kredit / 3 hari sekali per akun (§2a). v1.2.0 (2026-11-02): Mode AI Standar/Pro + model ringan untuk tugas ringan (§3a). v1.1.0 (2026-10-30): disesuaikan dengan sistem yang berjalan (clau-agent 0.14.0) dan alur kredit Sintra.ai. v1.0.0 (2026-10-29): perintah owner Dea Karisna (d34faiza) dengan konfirmasi bahwa Pak Indra sudah menyetujui model langganan seperti Sintra.ai (clau-core AI-CONSTITUTION v4.0.0 §4b). Ini **sumber tunggal** angka harga publik: landing page (`web/src/data/pricing.ts`) dan platform (clau-agent) wajib memakai angka yang sama. Harga layanan terkelola (managed) tetap di price sheet privat owner.
 
 ## 1. Paket
 
@@ -41,6 +41,22 @@ Aturan kredit (sama dengan sistem, kontrak clau-core API 0.14.0; alur seperti Si
 | Refund | Job AI yang gagal/dibatalkan mengembalikan kredit percobaannya; bila masa berlaku sudah lewat, kredit itu ikut hangus |
 
 Kredit percobaan bukan langganan: tidak ada kredit bulanan dan tidak ada tagihan otomatis setelah 3 hari. Untuk lanjut, klien memilih paket (§1) atau top up (§2). Aturan hitung §4 tetap berlaku untuk tarif yang dipotong dari kredit percobaan. Sistem: kontrak clau-core API 0.15.0 (bucket `trial`).
+
+## 2b. Garansi Uang Kembali 14 Hari (seperti Sintra.ai)
+
+Keputusan owner Dea Karisna 2026-11-02.
+
+| Item | Aturan |
+|---|---|
+| Berlaku untuk | **Pembayaran paket berlangganan pertama** (§1) per akun usaha, semua durasi |
+| Jangka waktu | Permintaan masuk paling lambat **14 hari kalender** sejak pembayaran lunas |
+| Tidak termasuk | Kredit percobaan (§2a, memang gratis), **top up kredit** (§2), perpanjangan atau paket kedua dan seterusnya |
+| Cara minta | Email ke tim CLAU dari email pemilik akun, sebutkan nama usaha dan tanggal bayar. Tidak perlu alasan |
+| Proses | Disetujui → uang kembali penuh lewat metode bayar asal dalam **3–5 hari kerja** (waktu masuk ke rekening mengikuti bank/payment gateway) |
+| Akibat | Paket berakhir saat refund disetujui; sisa kredit bulanan hangus. Draft yang sudah dibuat tetap milik klien dan bisa diunduh sebelum akses ditutup |
+| Ditolak bila | Pelanggaran Penggunaan Wajar (akun palsu/berulang untuk mengulang garansi, penyalahgunaan sistem). Keputusan tertulis ke klien |
+
+Kredit dari job AI yang gagal/dibatalkan tetap dikembalikan otomatis (§2), terpisah dari garansi ini. Halaman publik: web `/kebijakan-refund` dan `/penggunaan-wajar`.
 
 ## 3. Tarif Kredit per Aksi
 
@@ -98,6 +114,7 @@ Aturan mode:
 
 | Version | Date | Status | Summary |
 |---|---|---|---|
+| 1.4.0 | 2026-11-02 | Approved | Garansi uang kembali 14 hari §2b: paket berlangganan pertama, top up & kredit percobaan tidak termasuk, proses 3–5 hari kerja. Perintah owner Dea Karisna (pilihan sama dengan Sintra.ai) |
 | 1.3.0 | 2026-11-02 | Approved | Kredit percobaan §2a: 50 kredit, 3 hari, sekali per akun usaha, dipakai paling dulu, sisa hangus. Perintah owner Dea Karisna (pilihan sama dengan trial Sintra.ai) |
 | 1.2.0 | 2026-11-02 | Approved | Mode AI (§3a): Ringan (Haiku, otomatis untuk tugas ringan, tarif sama), Standar (Sonnet, default), Pro (Fable 5.1, pilihan klien, 4× tarif). Perintah owner Dea Karisna; aktif setelah TASK-004 |
 | 1.1.0 | 2026-10-30 | Approved | Disesuaikan dengan sistem & alur Sintra.ai (perintah owner Dea Karisna): aturan kredit lengkap (urutan pakai, top up hangus 12 bulan otomatis, top up terdekat hangus di dashboard, refund & bonus tidak hangus, top up tanpa paket aktif); chat ditandai Planned; tarif SOP, balas calon pelanggan, pesan tamu, website yang sudah ada di sistem dicantumkan; catatan tahap uji |
